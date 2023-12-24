@@ -1,4 +1,4 @@
----
+<!-- ---
 permalink: /
 title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
 excerpt: "About me"
@@ -47,4 +47,11 @@ Example: editing a markdown file for a talk
 
 For more info
 ------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+## About Me
+
+I am currently a first-year PhD student at the [University of Melbourne](https://www.unimelb.edu.au/) (started from Feb 2023). I am supervised by Dr. [Christoph Treude](https://ctreude.ca/) and Dr. [Mansooreh Zahedi](https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en).
+
+My research interest lies in applying both empirical and automated techniques in analysing and improving software documentation contents and activities.
+
+I have attended several prestigious international conference including ICSE and ESEC/FSE. My work has been published in ESEC/FSE'23.
