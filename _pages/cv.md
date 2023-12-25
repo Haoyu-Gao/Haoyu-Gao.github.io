@@ -9,20 +9,28 @@ redirect_from:
 
 {% include base_path %}
 
+[CV](http://haoyu-gao.github.io/files/Haoyu_Gao_CV.pdf)
+
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Applied Mathematics, Fuzhou University 2016 - 2020
+* M.S. in Information Technology, the University of Melbourne, 2020  -2022
+* Ph.D in Computer Science, the University of Melbourne, 2023 - present (expected)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2023: Research Assistant
+  * the University of Melbourne
+  * Duties: Mining software repositories, Qualitative analysis
+  * Supervisor: Dr. Christoph Treude and Dr. Mansooreh Zahedi
 
-* Fall 2015: Research Assistant
+* 2021: Research Intern
+  * Haier China
+  * Duties: Data visualisation, Data preprocessing, Data anomaly detecion
+
+
+
+<!-- * Fall 2015: Research Assistant
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
@@ -56,4 +64,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
