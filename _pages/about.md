@@ -8,8 +8,8 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first-year PhD student at the [University of Melbourne](https://www.unimelb.edu.au/) (started from Feb 2023). I am supervised by Dr. [Christoph Treude](https://ctreude.ca/) and Dr. [Mansooreh Zahedi](https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en).
+I am currently a third-year PhD student at the [University of Melbourne](https://www.unimelb.edu.au/) (started from Feb 2023). I am supervised by A/Prof [Christoph Treude](https://ctreude.ca/) and Dr. [Mansooreh Zahedi](https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en).
 
-My research interest lies in applying both empirical and automated techniques in analysing and improving software documentation contents and activities.
+My research focuses on supporting developers in documentation maintenance and knowledge acquisition in both traditional and AI-based software systems.
 
-I have attended several prestigious international conference including ICSE and ESEC/FSE. My work has been published in ESEC/FSE'23. 
+I have published research works in several prestigious venues such as TSE, FSE, and ESEM.

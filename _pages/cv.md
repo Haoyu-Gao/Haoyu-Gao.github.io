@@ -15,7 +15,7 @@ Education
 ======
 * B.S. in Applied Mathematics, Fuzhou University 2016 - 2020
 * M.S. in Information Technology, the University of Melbourne, 2020  -2022
-* Ph.D in Computer Science, the University of Melbourne, 2023 - present (expected)
+* Ph.D in Computer Science, the University of Melbourne, 2023 - present
 
 Work experience
 ======
