@@ -45,9 +45,7 @@ Email: haoyug1@student.unimelb.edu.au
 
 {% raw %}
 <div>
-<script type="text/javascript" id="clustrmaps" 
-  src="//clustrmaps.com/map_v2.js?d=XXXXXXXXXXXXXXXXXXXXXXX&cl=ffffff&w=a">
-</script>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=2kz3g2Ccaw4X54FYyWBNuO81f7yTBbVR99T5OcUBGb4"></script>
 </div>
 {% endraw %}
 
