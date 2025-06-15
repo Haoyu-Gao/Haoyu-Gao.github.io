@@ -23,7 +23,7 @@ Before starting of my Ph.D, I obtained my Master’s degree in Information Techn
 
 **[FSE'23]** **H. Gao**, C. Treude, and M. Zahedi. [Evaluating Transfer Learning for Simplifying GitHub READMEs](https://dl.acm.org/doi/abs/10.1145/3611643.3616291). In ESEC/FSE’23: Proceedings of the Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering, 2023.
 
-**[ESEM'24]** H. Gao, M. Zahedi, C. Treude, S. Ronsenstock, and M. Cheong. [Documenting Ethical Considerations in Open Source AI Models](https://dl.acm.org/doi/abs/10.1145/3674805.3686679). In ESEM’24: 18th International Symposium on Empirical Software Engineering and Measurement, 2024.
+**[ESEM'24]** **H. Gao**, M. Zahedi, C. Treude, S. Ronsenstock, and M. Cheong. [Documenting Ethical Considerations in Open Source AI Models](https://dl.acm.org/doi/abs/10.1145/3674805.3686679). In ESEM’24: 18th International Symposium on Empirical Software Engineering and Measurement, 2024.
 
 **[ICSME'25]** P. Banyongrakkul, M. Zahedi, P. Thongtanunam, C. Treude, and **H. Gao**. From Release to Adoption: Challenges in Reusing Pre-trained AI Models for Downstream Developers. In ICSME’25: 41st International Conference on Software Maintenance and Evolution
 
