@@ -25,7 +25,7 @@ Before starting of my Ph.D, I obtained my Master’s degree in Information Techn
 
 **[ESEM'24]** **H. Gao**, M. Zahedi, C. Treude, S. Ronsenstock, and M. Cheong. [Documenting Ethical Considerations in Open Source AI Models](https://dl.acm.org/doi/abs/10.1145/3674805.3686679). In ESEM’24: 18th International Symposium on Empirical Software Engineering and Measurement, 2024.
 
-**[ICSME'25]** P. Banyongrakkul, M. Zahedi, P. Thongtanunam, C. Treude, and **H. Gao**. From Release to Adoption: Challenges in Reusing Pre-trained AI Models for Downstream Developers. In ICSME’25: 41st International Conference on Software Maintenance and Evolution
+**[ICSME'25]** P. Banyongrakkul, M. Zahedi, P. Thongtanunam, C. Treude, and **H. Gao**. [From Release to Adoption: Challenges in Reusing Pre-trained AI Models for Downstream Developers](https://arxiv.org/abs/2506.23234). In ICSME’25: 41st International Conference on Software Maintenance and Evolution
 
 **[ACL Findings'25]** H. Lin, C. Liu, **H. Gao**, P. Thongtanunam, and C. Treude. [CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models](https://arxiv.org/abs/2503.16167). In Findings of ACL’25 : The 63rd Annual Meeting of the Association for Computational Linguistics 
 
