@@ -31,7 +31,7 @@ Before starting of my Ph.D, I obtained my Master’s degree in Information Techn
 
 
 ## CV
-Please check my [CV](http://haoyu-gao.github.io/files/Haoyu_Gao_CV.pdf) if you are interested. 
+Please check my [CV](http://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_02.pdf) if you are interested. 
 
 **Contact**:
 
