@@ -12,7 +12,7 @@ redirect_from:
 
 ## About Me
 
-I am currently a third-year PhD student at the [University of Melbourne](https://www.unimelb.edu.au/) (started from Feb 2023). I am supervised by A/Prof [Christoph Treude](https://ctreude.ca/) and Dr. [Mansooreh Zahedi](https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en).
+I am currently a fourth-year PhD student at the [University of Melbourne](https://www.unimelb.edu.au/) (started from Feb 2023). I am supervised by A/Prof [Christoph Treude](https://ctreude.ca/) and Dr. [Mansooreh Zahedi](https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en).
 
 My research focuses on supporting developers in documentation maintenance and knowledge acquisition in both traditional and AI-based software systems. I am particular interested in using **qualitative methods** to empirically understand issues and phenomenons in the software ecosystems from the lens of both software artefacts and developers, as well as building automated pipelines using **machine learning methods**.
 
