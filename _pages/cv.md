@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-[CV](http://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_05.pdf)
+[CV](https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_05.pdf)
 
 Education
 ======
