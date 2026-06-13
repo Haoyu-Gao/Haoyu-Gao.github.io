@@ -9,59 +9,70 @@ redirect_from:
 
 {% include base_path %}
 
-[CV](https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_05.pdf)
+<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_05.pdf">Download Full CV (PDF)</a></p>
 
-Education
-======
-* B.S. in Applied Mathematics, Fuzhou University 2016 - 2020
-* M.S. in Information Technology, the University of Melbourne, 2020  -2022
-* Ph.D in Computer Science, the University of Melbourne, 2023 - present
+## Education
 
-Work experience
-======
-* 2023: Research Assistant
-  * the University of Melbourne
-  * Duties: Mining software repositories, Qualitative analysis
-  * Supervisor: Dr. Christoph Treude and Dr. Mansooreh Zahedi
+* **Ph.D in Computer Science**, the University of Melbourne, Jan 2023 – Nov 2026 (Expected)
+  * Supervisors: A/Prof. Christoph Treude and Dr. Mansooreh Zahedi
+  * Research Topic: Mitigating Knowledge Barriers in Traditional and AI-Based Software Development
+* **M.S. in Information Technology**, the University of Melbourne, Feb 2021 – Dec 2022
+  * WAM: 86.7/100
+* **B.S. in Mathematics and Applied Mathematics**, Fuzhou University, Sep 2016 – July 2020
+  * WAM: 86.6/100
 
-* 2021: Research Intern
-  * Haier China
-  * Duties: Data visualisation, Data preprocessing, Data anomaly detecion
+## Experience
 
+* **Visiting Postgraduate Research Student**, Singapore Management University, Sep 2025 – Feb 2026
+  * Visiting Professor: A/Prof. Christoph Treude
 
+* **Teaching Assistant**, the University of Melbourne, Oct 2023 – Present
+  * Tutored: COMP90041 Programming and Software Development; SWEN90017 Masters Advanced Software Project
+  * Marked: COMP90041, SWEN90016 Software Processes and Management, COMP90049 Introduction to Machine Learning, COMP90051 Statistical Machine Learning
 
-<!-- * Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Research Assistant**, the University of Melbourne, Dec 2023 – May 2024
+  * Skills: Mining software repositories, Qualitative analysis, Ethics in Machine Learning
 
-Publications
-======
-  <ul>{% for post in site.publications %}
+* **Machine Learning Intern**, Haier Group Corporation, Oct 2021 – Feb 2022
+  * Skills: Machine Learning, Data analysis
+
+## Publications
+
+  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+
+## Services and Activities
+
+**Journal Review**
+* Automated Software Engineering Journal
+
+**Conference Review**
+* PC member for ICSME'26 Demo and Data Showcase Track
+* PC member for ICSE'26 Artifact Evaluation Track
+* Junior PC member for MSR'25
+
+**Sub-reviewer**
+* TOSEM, ICSE'25, ESEM'24, APSEC'24
+
+**Student Volunteer**
+* ICSE 2023 — International Conference on Software Engineering
+
+## (Co)-supervised Students
+
+* Hao Guan — Master of Software Engineering, the University of Melbourne
+
+## Skills
+
+* **Programming**: Python, Java, JavaScript, R
+* **Research**: Data mining, Interview-based study, Qualitative analysis, Machine learning, HPC cluster
+* **Languages**: Mandarin (Native), English (Full professional proficiency)
+
+## Awards and Scholarships
+
+* **Dean's Honours List**, the University of Melbourne, July 2023
+  * Recognises outstanding academic performance, representing the top 5% of students in engineering or IT master programs.
+* **Melbourne Research Scholarship**, the University of Melbourne, Jan 2023
+  * Rewarded to high-achieving students participating in research activities.
+* **Melbourne Graduate Scholarship**, the University of Melbourne, Jan 2022
+  * Rewarded to coursework students in recognition of their academic achievements.
