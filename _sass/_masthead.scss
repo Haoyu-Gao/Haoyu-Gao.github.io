@@ -10,11 +10,14 @@
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
   z-index: 20;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: 1em 1em 1em;
+    padding: 1.15em 1em;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -46,8 +49,48 @@
   list-style-type: none;
   white-space: nowrap;
 
+  a {
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.25s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $accent-color;
+      transition: width 0.3s ease;
+      border-radius: 1px;
+    }
+
+    &:hover {
+      color: $accent-color;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+
+    a {
+      font-size: 1.1em;
+      color: $text-color;
+      letter-spacing: -0.01em;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
   }
 }
