@@ -146,7 +146,7 @@ redirect_from:
   <p>If you would like to collaborate, feel free to reach out by sending an email :)</p>
   <p><i class="fas fa-fw fa-envelope"></i> haoyug1@student.unimelb.edu.au</p>
   <p><i class="fas fa-fw fa-map-marker-alt"></i> 700 Swanston St, Carlton VIC 3053, Victoria, Australia</p>
-  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_05.pdf">Download CV (PDF)</a></p>
+  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_06.pdf">Download CV (PDF)</a></p>
 </div>
 </div>
 

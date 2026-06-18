@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_05.pdf">Download Full CV (PDF)</a></p>
+<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_06.pdf">Download Full CV (PDF)</a></p>
 
 ## Education
 
