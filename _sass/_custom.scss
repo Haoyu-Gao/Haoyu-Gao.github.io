@@ -176,6 +176,69 @@
   margin: 0.1em 0;
 }
 
+// Status variants (under review / submission / preprint)
+.pub-card--revision {
+  border-left: 3px solid #d97706;
+}
+
+.pub-card--submission {
+  border-left: 3px solid #9ca3af;
+}
+
+.pub-card--preprint {
+  border-left: 3px solid #0d9488;
+}
+
+.pub-venue--revision {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pub-venue--submission {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.pub-venue--preprint {
+  background: #ccfbf1;
+  color: #0f766e;
+}
+
+// Action links (PDF / arXiv / DOI) on publication cards
+.pub-links {
+  margin-top: 0.6em;
+  display: flex;
+  gap: 0.6em;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 3px 12px;
+    font-size: $type-size-7;
+    font-weight: 600;
+    color: $accent-color-dark;
+    background: rgba($accent-color-light, 0.6);
+    border: 1px solid rgba($accent-color, 0.25);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.15s ease;
+
+    &::after {
+      display: none; // suppress global underline animation
+    }
+
+    &:hover {
+      background: $accent-color-light;
+      transform: translateY(-1px);
+    }
+
+    i {
+      font-size: 0.85em;
+    }
+  }
+}
+
 
 /*
    Contact Inline
