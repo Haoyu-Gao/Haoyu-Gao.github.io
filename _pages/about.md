@@ -2,11 +2,87 @@
 permalink: /
 title: "Haoyu Gao — PhD Candidate at the University of Melbourne"
 excerpt: "PhD candidate researching documentation maintenance and knowledge acquisition in software engineering at the University of Melbourne."
-author_profile: true
+author_profile: false
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<style>
+/* Hide the default page title (the hero shows the name instead) */
+.page__title { display: none; }
+#main .page { width: 100%; }
+
+.home-hero {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 0 2.2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.home-hero__avatar {
+  width: 150px; height: 150px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 12px 34px rgba(0,0,0,0.14);
+  flex-shrink: 0;
+}
+.home-hero__name {
+  font-size: 2.3rem; font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.12em; color: #111827;
+  line-height: 1.1;
+}
+.home-hero__role {
+  font-size: 1.02rem; color: #2563eb;
+  font-weight: 600; margin: 0 0 0.6em;
+}
+.home-hero__tagline {
+  font-size: 1.02rem; color: #4b5563;
+  line-height: 1.6; margin: 0 0 1em; max-width: 62ch;
+}
+.home-hero__tags { margin: 0 0 1.1em; }
+.home-hero__cta { display: flex; flex-wrap: wrap; gap: 0.55rem; }
+.home-hero__cta a {
+  display: inline-flex; align-items: center; gap: 0.45em;
+  padding: 0.5em 1.05em; border-radius: 8px;
+  font-size: 0.9rem; font-weight: 600; text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.home-hero__cta a::after { display: none !important; }
+.home-hero__cta .btn-primary { background: #2563eb; color: #fff; }
+.home-hero__cta .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(37,99,235,0.35); }
+.home-hero__cta .btn-ghost { background: #fff; color: #374151; border: 1px solid #d1d5db; }
+.home-hero__cta .btn-ghost:hover { border-color: #2563eb; color: #2563eb; transform: translateY(-2px); }
+@media (max-width: 640px) {
+  .home-hero { flex-direction: column; text-align: center; }
+  .home-hero__cta, .home-hero__tags { justify-content: center; }
+}
+</style>
+
+<div class="home-hero">
+  <img class="home-hero__avatar" src="/images/my_new_photo.png" alt="Haoyu Gao">
+  <div class="home-hero__body">
+    <div class="home-hero__name">Haoyu Gao</div>
+    <div class="home-hero__role">PhD Candidate · Software Engineering · University of Melbourne</div>
+    <p class="home-hero__tagline">I study how developers create, maintain, and communicate software knowledge — to each other and, increasingly, to AI agents.</p>
+    <div class="home-hero__tags">
+      <span class="research-tag">Documentation Maintenance</span>
+      <span class="research-tag">Software Ecosystems</span>
+      <span class="research-tag">Human-AI Interaction</span>
+      <span class="research-tag">Qualitative Methods</span>
+      <span class="research-tag">ML for SE</span>
+    </div>
+    <div class="home-hero__cta">
+      <a class="btn-primary" href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_07.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+      <a class="btn-ghost" href="https://scholar.google.com/citations?user=vSm1V54AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Scholar</a>
+      <a class="btn-ghost" href="https://github.com/Haoyu-Gao"><i class="fab fa-github"></i> GitHub</a>
+      <a class="btn-ghost" href="mailto:haoyug1@student.unimelb.edu.au"><i class="fas fa-envelope"></i> Email</a>
+      <a class="btn-ghost" href="https://orcid.org/0000-0003-3274-8630"><i class="fab fa-orcid"></i> ORCID</a>
+    </div>
+  </div>
+</div>
 
 <div class="section-block">
 <h2>About Me</h2>
@@ -15,13 +91,7 @@ redirect_from:
 
 <p>My research intersects empirical and automated software engineering, focusing on improving how developers create, maintain, and use software documentation. I study documentation as a socio-technical artefact, combining repository mining, qualitative methods, and machine learning. With the rise of LLMs, my work is pivoting towards human–AI interaction, specifically examining how development knowledge is communicated to AI agents.</p>
 
-<span class="research-tag">Qualitative Methods</span>
-<span class="research-tag">Software Ecosystems</span>
-<span class="research-tag">Documentation Maintenance</span>
-<span class="research-tag">Machine Learning for SE</span>
-<span class="research-tag">Human-AI Interaction</span>
-
-<p style="margin-top: 1em;">Before starting my Ph.D, I obtained my Master's degree in Information Technology from the University of Melbourne (WAM: 86.7/100), and my Bachelor's degree in Mathematics and Applied Mathematics from Fuzhou University, China.</p>
+<p>Before starting my Ph.D, I obtained my Master's degree in Information Technology from the University of Melbourne (WAM: 86.7/100), and my Bachelor's degree in Mathematics and Applied Mathematics from Fuzhou University, China.</p>
 </div>
 
 
