@@ -11,7 +11,7 @@ redirect_from:
 <div class="section-block">
 <h2>About Me</h2>
 
-<p>I am currently a fourth-year PhD student at the <a href="https://www.unimelb.edu.au/">University of Melbourne</a> (started from Feb 2023). I am supervised by A/Prof <a href="https://ctreude.ca/">Christoph Treude</a> and Dr. <a href="https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en">Mansooreh Zahedi</a>.</p>
+<p>I am currently a fourth-year PhD student at the <a href="https://www.unimelb.edu.au/">University of Melbourne</a> (started from Jan 2023). I am supervised by A/Prof <a href="https://ctreude.ca/">Christoph Treude</a> and Dr. <a href="https://scholar.google.dk/citations?user=-mrcwTwAAAAJ&hl=en">Mansooreh Zahedi</a>.</p>
 
 <p>My research intersects empirical and automated software engineering, focusing on improving how developers create, maintain, and use software documentation. I study documentation as a socio-technical artefact, combining repository mining, qualitative methods, and machine learning. With the rise of LLMs, my work is pivoting towards human–AI interaction, specifically examining how development knowledge is communicated to AI agents.</p>
 
@@ -29,34 +29,12 @@ redirect_from:
 <h2>News</h2>
 
 <ul class="news-list">
+  {% for item in site.data.news %}
   <li class="news-item">
-    <span class="news-date">Jul 2026</span>
-    <span class="news-text">📄 New preprint on arXiv — "From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained"</span>
+    <span class="news-date">{{ item.date }}</span>
+    <span class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}</span>
   </li>
-  <li class="news-item">
-    <span class="news-date">May 2026</span>
-    <span class="news-text">📄 Short paper accepted at <strong>MSR'26</strong> — "On Autopilot? An Empirical Study of Human-AI Teaming and Review Practices in Open Source"</span>
-  </li>
-  <li class="news-item">
-    <span class="news-date">Sep 2025</span>
-    <span class="news-text">✈️ Visiting Postgraduate Research Student at <strong>Singapore Management University</strong> (Sep 2025 – Feb 2026)</span>
-  </li>
-  <li class="news-item">
-    <span class="news-date">Jun 2025</span>
-    <span class="news-text">📄 Paper accepted at <strong>ICSME'25</strong> — "From Release to Adoption: Challenges in Reusing Pre-trained AI Models for Downstream Developers"</span>
-  </li>
-  <li class="news-item">
-    <span class="news-date">May 2025</span>
-    <span class="news-text">📄 Paper accepted at <strong>ACL Findings'25</strong> — "CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models"</span>
-  </li>
-  <li class="news-item">
-    <span class="news-date">Mar 2025</span>
-    <span class="news-text">📄 Paper published in <strong>IEEE TSE</strong> — "Adapting Installation Instructions in Rapidly Evolving Software Ecosystems"</span>
-  </li>
-  <li class="news-item">
-    <span class="news-date">Oct 2024</span>
-    <span class="news-text">🎤 Presented at <strong>ESEM'24</strong> on documenting ethical considerations in open source AI models</span>
-  </li>
+  {% endfor %}
 </ul>
 </div>
 
@@ -72,6 +50,14 @@ redirect_from:
   <div class="pub-authors"><strong>H. Gao</strong>, P. Banyongrakkul, H. Guan, M. Zahedi, C. Treude</div>
   <div class="pub-venue-text">Short Paper in MSR'26: 23rd International Conference on Mining Software Repositories, 2026 (CORE A)</div>
   <div class="pub-links"><a href="https://arxiv.org/pdf/2601.13754"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2601.13754"><i class="fas fa-archive"></i> arXiv</a></div>
+</div>
+
+<div class="pub-card">
+  <span class="pub-venue pub-venue--emse">EMSE'26</span>
+  <div class="pub-title"><a href="https://arxiv.org/abs/2503.19444">AI Failures in the Eyes of the Downstream Developer: A First Look at Concerns, Practices, and Challenges</a></div>
+  <div class="pub-authors"><strong>H. Gao</strong>, M. Zahedi, W. Jiang, H. Lin, J. Davis, and C. Treude</div>
+  <div class="pub-venue-text">Empirical Software Engineering (Springer Nature), 2026 (CORE A)</div>
+  <div class="pub-links"><a href="https://arxiv.org/pdf/2503.19444"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2503.19444"><i class="fas fa-archive"></i> arXiv</a></div>
 </div>
 
 <div class="pub-card">
@@ -117,13 +103,6 @@ redirect_from:
 <h3 style="margin-top: 1.5em; margin-bottom: 0.8em; font-size: 1.1em; color: #374151;">Under Review</h3>
 
 <div class="pub-card pub-card--revision">
-  <span class="pub-venue pub-venue--revision">EMSE (Major Revision)</span>
-  <div class="pub-title"><a href="https://arxiv.org/abs/2503.19444">AI Failures in the Eyes of the Downstream Developer: A First Look at Concerns, Practices, and Challenges</a></div>
-  <div class="pub-authors"><strong>H. Gao</strong>, M. Zahedi, W. Jiang, H. Lin, J. Davis, and C. Treude</div>
-  <div class="pub-links"><a href="https://arxiv.org/pdf/2503.19444"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2503.19444"><i class="fas fa-archive"></i> arXiv</a></div>
-</div>
-
-<div class="pub-card pub-card--revision">
   <span class="pub-venue pub-venue--revision">TSE (Major Revision)</span>
   <div class="pub-title"><a href="https://arxiv.org/abs/2603.00489">Does My README File Need To Be Updated? Exploring LLM-Based README Maintenance</a></div>
   <div class="pub-authors"><strong>H. Gao</strong>, H. Lin, C. Treude, G. Gay, and M. Zahedi</div>
@@ -137,8 +116,8 @@ redirect_from:
   <div class="pub-links"><a href="https://arxiv.org/pdf/2604.17940"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2604.17940"><i class="fas fa-archive"></i> arXiv</a></div>
 </div>
 
-<div class="pub-card pub-card--submission">
-  <span class="pub-venue pub-venue--submission">Under Submission</span>
+<div class="pub-card pub-card--revision">
+  <span class="pub-venue pub-venue--revision">TSE (Major Revision)</span>
   <div class="pub-title"><a href="https://arxiv.org/abs/2604.06723">Fine-grained Approaches for Confidence Calibration of LLMs in Automated Code Revision</a></div>
   <div class="pub-authors">H. Lin, C. Liu, <strong>H. Gao</strong>, P. Thongtanunam, and C. Treude</div>
   <div class="pub-links"><a href="https://arxiv.org/pdf/2604.06723"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2604.06723"><i class="fas fa-archive"></i> arXiv</a></div>
@@ -170,17 +149,8 @@ redirect_from:
   <p>If you would like to collaborate, feel free to reach out by sending an email :)</p>
   <p><i class="fas fa-fw fa-envelope"></i> haoyug1@student.unimelb.edu.au</p>
   <p><i class="fas fa-fw fa-map-marker-alt"></i> 700 Swanston St, Carlton VIC 3053, Victoria, Australia</p>
-  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_06.pdf">Download CV (PDF)</a></p>
+  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_07.pdf">Download CV (PDF)</a></p>
 </div>
 </div>
 
 
-<div class="section-block">
-<h2>Visitor Map</h2>
-
-<div class="visitor-map-container">
-{% raw %}
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=2kz3g2Ccaw4X54FYyWBNuO81f7yTBbVR99T5OcUBGb4"></script>
-{% endraw %}
-</div>
-</div>

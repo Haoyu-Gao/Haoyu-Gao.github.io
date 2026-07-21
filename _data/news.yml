@@ -1,0 +1,32 @@
+# =====================================================================
+#  News / updates shown on the homepage.
+#  To add an item: copy one block below, put it at the TOP (newest first).
+#  Only two fields — no HTML needed. Markdown (**bold**, [links](url)) works.
+# =====================================================================
+
+- date: "Jul 2026"
+  text: 'Paper accepted at **EMSE** — "AI Failures in the Eyes of the Downstream Developer: A First Look at Concerns, Practices, and Challenges" 📄'
+
+- date: "Jul 2026"
+  text: 'New preprint on arXiv — "From Registry to Repository: How AI Agent Skills Are Written, Adapted, and Maintained" 📄'
+
+- date: "May 2026"
+  text: 'Short paper accepted at **MSR''26** — "On Autopilot? An Empirical Study of Human-AI Teaming and Review Practices in Open Source" 📄'
+
+- date: "Apr 2026"
+  text: 'Attended **ICSE''26** in Rio de Janeiro, Brazil 🇧🇷'
+
+- date: "Sep 2025"
+  text: 'Visiting Postgraduate Research Student at **Singapore Management University** (Sep 2025 – Feb 2026) ✈️'
+
+- date: "Jun 2025"
+  text: 'Paper accepted at **ICSME''25** — "From Release to Adoption: Challenges in Reusing Pre-trained AI Models for Downstream Developers" 📄'
+
+- date: "May 2025"
+  text: 'Paper accepted at **ACL Findings''25** — "CodeReviewQA: The Code Review Comprehension Assessment for Large Language Models" 📄'
+
+- date: "Mar 2025"
+  text: 'Paper published in **IEEE TSE** — "Adapting Installation Instructions in Rapidly Evolving Software Ecosystems" 📄'
+
+- date: "Oct 2024"
+  text: 'Presented at **ESEM''24** on documenting ethical considerations in open source AI models 🎤'
