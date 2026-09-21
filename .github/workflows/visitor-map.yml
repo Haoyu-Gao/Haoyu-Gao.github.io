@@ -1,0 +1,41 @@
+name: Update visitor map
+
+# Refreshes _data/visitors.json from the whos.amung.us feed so the homepage can
+# draw the map itself. Doing the fetch here (rather than in the visitor's
+# browser) is what stops content blockers from emptying the map.
+on:
+  schedule:
+    - cron: '17 4 * * *' # daily, 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: visitor-map
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Refresh visitor data
+        run: node scripts/update-visitors.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- _data/visitors.json; then
+            echo "No change to _data/visitors.json"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/visitors.json
+          git commit -m "Update visitor map data"
+          git push

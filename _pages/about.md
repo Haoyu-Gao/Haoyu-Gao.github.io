@@ -228,10 +228,75 @@ redirect_from:
 <h2>Visitor Map</h2>
 
 <div class="visitor-map-container">
-{% raw %}
-<script id="_wauc63">var _wau = _wau || []; _wau.push(["map", "xvi5vhvj7l", "c63", "600", "300", "dashmap", "star-blue"]);</script><script async src="//waust.at/m.js"></script>
-{% endraw %}
+{% assign visitors = site.data.visitors %}
+{% if visitors and visitors.locations.size > 0 %}
+  <div class="vmap">
+    <svg class="vmap__svg" viewBox="0 25 1000 400" role="img"
+         aria-label="World map showing {{ visitors.place_count }} places in {{ visitors.country_count }} countries that recent visitors came from.">
+      {% include world-map.svg %}
+      <g class="vmap__pins">
+        {% for loc in visitors.locations %}
+        <circle class="vmap__pin{% if loc.recent == 0 %} vmap__pin--past{% endif %}"
+                cx="{{ loc.x }}" cy="{{ loc.y }}" r="{{ loc.r }}"
+                data-label="{{ loc.label | escape }}"><title>{{ loc.label | escape }}</title></circle>
+        {% endfor %}
+      </g>
+    </svg>
+    <div class="vmap__tip" hidden></div>
+  </div>
+
+  <div class="vmap__stats">
+    <div class="vmap__stat"><span class="vmap__stat-num">{{ visitors.country_count }}</span><span class="vmap__stat-label">countries</span></div>
+    <div class="vmap__stat"><span class="vmap__stat-num">{{ visitors.city_count }}</span><span class="vmap__stat-label">cities</span></div>
+    <div class="vmap__stat"><span class="vmap__stat-num">{{ visitors.place_count }}</span><span class="vmap__stat-label">places</span></div>
+  </div>
+
+  <div class="vmap__flags">
+    {% for country in visitors.countries %}
+    <span class="vmap__flag" title="{{ country.name | escape }}"><span class="vmap__flag-glyph">{{ country.flag }}</span>{{ country.name }}</span>
+    {% endfor %}
+  </div>
+
+  <p class="vmap__note">Dot size shows visitors in the most recent window of {{ visitors.window_size }}; faded dots are places seen earlier. Updated {{ visitors.updated | date: "%-d %B %Y" }}.</p>
+{% else %}
+  <p class="vmap__note">Visitor map data is being collected — check back shortly.</p>
+{% endif %}
 </div>
 </div>
+
+{% comment %}
+  Visitor counting. The map above is drawn from _data/visitors.json (refreshed by
+  .github/workflows/visitor-map.yml) so it renders even when this beacon is
+  blocked. This is only the ping that keeps the feed fed — unlike the old
+  waust.at/m.js widget it pulls in no advertising trackers.
+{% endcomment %}
+<script>
+(function () {
+  new Image().src = 'https://whos.amung.us/pingjs/?k=xvi5vhvj7l&c=m&v=27&r=' + Math.ceil(Math.random() * 9999);
+
+  var map = document.querySelector('.vmap');
+  if (!map) return;
+  var tip = map.querySelector('.vmap__tip');
+
+  function show(e) {
+    var box = map.getBoundingClientRect();
+    tip.textContent = e.target.getAttribute('data-label');
+    tip.hidden = false;
+    var dot = e.target.getBoundingClientRect();
+    // Keep the bubble inside the map even for pins near an edge.
+    var half = tip.offsetWidth / 2;
+    var x = dot.left - box.left + dot.width / 2;
+    tip.style.left = Math.min(Math.max(x, half + 2), box.width - half - 2) + 'px';
+    tip.style.top = (dot.top - box.top) + 'px';
+  }
+  function hide() { tip.hidden = true; }
+
+  map.querySelectorAll('.vmap__pin').forEach(function (pin) {
+    pin.addEventListener('mouseenter', show);
+    pin.addEventListener('mouseleave', hide);
+  });
+  map.addEventListener('mouseleave', hide);
+})();
+</script>
 
 
