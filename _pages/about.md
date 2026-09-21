@@ -283,7 +283,9 @@ redirect_from:
     tip.textContent = e.target.getAttribute('data-label');
     tip.hidden = false;
     var dot = e.target.getBoundingClientRect();
-    // Keep the bubble inside the map even for pins near an edge.
+    /* Keep the bubble inside the map even for pins near an edge.
+       Block comment on purpose: the site's HTML compressor flattens this
+       script onto one line, and a // comment would swallow the rest of it. */
     var half = tip.offsetWidth / 2;
     var x = dot.left - box.left + dot.width / 2;
     tip.style.left = Math.min(Math.max(x, half + 2), box.width - half - 2) + 'px';
