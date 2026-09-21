@@ -1,9 +1,9 @@
 {
   "updated": "2026-09-21",
   "country_count": 7,
-  "place_count": 18,
+  "place_count": 17,
   "city_count": 12,
-  "window_size": 48,
+  "window_size": 42,
   "countries": [
     {
       "cc": "US",
@@ -69,10 +69,10 @@
       "cc": "US",
       "first_seen": "2026-09-21",
       "last_seen": "2026-09-21",
-      "recent": 7,
+      "recent": 6,
       "x": 228.3,
       "y": 145,
-      "r": 8.5,
+      "r": 7.8,
       "label": "United States"
     },
     {
@@ -89,43 +89,17 @@
       "label": "Council Bluffs, United States"
     },
     {
-      "lat": -37.8,
-      "lon": 145,
-      "city": "Melbourne",
-      "cc": "AU",
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-09-21",
-      "recent": 3,
-      "x": 902.8,
-      "y": 355,
-      "r": 5.5,
-      "label": "Melbourne, Australia"
-    },
-    {
       "lat": 34.8,
       "lon": 113.7,
       "city": null,
       "cc": "CN",
       "first_seen": "2026-09-21",
       "last_seen": "2026-09-21",
-      "recent": 3,
+      "recent": 4,
       "x": 815.8,
       "y": 153.3,
-      "r": 5.5,
+      "r": 6.4,
       "label": "China"
-    },
-    {
-      "lat": 0,
-      "lon": 0,
-      "city": null,
-      "cc": "UN",
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-09-21",
-      "recent": 3,
-      "x": 500,
-      "y": 250,
-      "r": 5.5,
-      "label": "Unknown"
     },
     {
       "lat": 39,
@@ -141,6 +115,19 @@
       "label": "Ashburn, United States"
     },
     {
+      "lat": -37.8,
+      "lon": 145,
+      "city": "Melbourne",
+      "cc": "AU",
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-09-21",
+      "recent": 2,
+      "x": 902.8,
+      "y": 355,
+      "r": 4.5,
+      "label": "Melbourne, Australia"
+    },
+    {
       "lat": -33.5,
       "lon": 143.2,
       "city": null,
@@ -152,19 +139,6 @@
       "y": 343.1,
       "r": 4,
       "label": "Australia"
-    },
-    {
-      "lat": -34.9,
-      "lon": 138.6,
-      "city": "Adelaide",
-      "cc": "AU",
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-09-21",
-      "recent": 1,
-      "x": 885,
-      "y": 346.9,
-      "r": 4,
-      "label": "Adelaide, Australia"
     },
     {
       "lat": 30.6,
@@ -232,19 +206,6 @@
       "label": "Toyohashi, Japan"
     },
     {
-      "lat": 34.7,
-      "lon": 135.7,
-      "city": "Ikoma",
-      "cc": "JP",
-      "first_seen": "2026-09-21",
-      "last_seen": "2026-09-21",
-      "recent": 1,
-      "x": 876.9,
-      "y": 153.6,
-      "r": 4,
-      "label": "Ikoma, Japan"
-    },
-    {
       "lat": 1.3,
       "lon": 103.9,
       "city": null,
@@ -282,6 +243,32 @@
       "y": 122.8,
       "r": 4,
       "label": "Boardman, United States"
+    },
+    {
+      "lat": -34.9,
+      "lon": 138.6,
+      "city": "Adelaide",
+      "cc": "AU",
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-09-21",
+      "recent": 0,
+      "x": 885,
+      "y": 346.9,
+      "r": 4,
+      "label": "Adelaide, Australia"
+    },
+    {
+      "lat": 34.7,
+      "lon": 135.7,
+      "city": "Ikoma",
+      "cc": "JP",
+      "first_seen": "2026-09-21",
+      "last_seen": "2026-09-21",
+      "recent": 0,
+      "x": 876.9,
+      "y": 153.6,
+      "r": 4,
+      "label": "Ikoma, Japan"
     }
   ]
 }

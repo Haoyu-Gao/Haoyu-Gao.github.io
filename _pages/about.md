@@ -242,6 +242,10 @@ redirect_from:
         {% endfor %}
       </g>
     </svg>
+    <div class="vmap__zoom">
+      <button type="button" class="vmap__zoom-btn" data-zoom="in" aria-label="Zoom in">+</button>
+      <button type="button" class="vmap__zoom-btn" data-zoom="out" aria-label="Zoom out" disabled>&minus;</button>
+    </div>
     <div class="vmap__tip" hidden></div>
   </div>
 
@@ -276,9 +280,63 @@ redirect_from:
 
   var map = document.querySelector('.vmap');
   if (!map) return;
+  var svg = map.querySelector('.vmap__svg');
   var tip = map.querySelector('.vmap__tip');
+  var zoomOut = map.querySelector('[data-zoom="out"]');
+  var zoomIn = map.querySelector('[data-zoom="in"]');
+
+  /* Home view, matching the svg's authored viewBox. */
+  var HOME = { x: 0, y: 25, w: 1000, h: 400 };
+  var MIN_W = HOME.w / 8;
+  var view = { x: HOME.x, y: HOME.y, w: HOME.w, h: HOME.h };
+
+  function apply() {
+    /* Never let a pan or zoom expose anything outside the home view. */
+    view.w = Math.min(HOME.w, Math.max(MIN_W, view.w));
+    view.h = view.w * (HOME.h / HOME.w);
+    view.x = Math.min(HOME.x + HOME.w - view.w, Math.max(HOME.x, view.x));
+    view.y = Math.min(HOME.y + HOME.h - view.h, Math.max(HOME.y, view.y));
+    svg.setAttribute('viewBox', view.x + ' ' + view.y + ' ' + view.w + ' ' + view.h);
+    zoomOut.disabled = view.w >= HOME.w;
+    zoomIn.disabled = view.w <= MIN_W;
+    hide();
+  }
+
+  function zoom(factor) {
+    var cx = view.x + view.w / 2;
+    var cy = view.y + view.h / 2;
+    view.w = view.w * factor;
+    view.h = view.w * (HOME.h / HOME.w);
+    view.x = cx - view.w / 2;
+    view.y = cy - view.h / 2;
+    apply();
+  }
+
+  zoomIn.addEventListener('click', function () { zoom(1 / 1.6); });
+  zoomOut.addEventListener('click', function () { zoom(1.6); });
+
+  /* Drag to pan, in viewBox units so it tracks the cursor at any zoom. */
+  var drag = null;
+  svg.addEventListener('pointerdown', function (e) {
+    /* Mouse only: claiming touch here would trap the page scroll on phones,
+       where the +/- buttons are the way to move around. */
+    if (e.pointerType !== 'mouse' || view.w >= HOME.w) return;
+    drag = { px: e.clientX, py: e.clientY, x: view.x, y: view.y, scale: view.w / svg.clientWidth };
+    svg.classList.add('is-panning');
+    svg.setPointerCapture(e.pointerId);
+  });
+  svg.addEventListener('pointermove', function (e) {
+    if (!drag) return;
+    view.x = drag.x - (e.clientX - drag.px) * drag.scale;
+    view.y = drag.y - (e.clientY - drag.py) * drag.scale;
+    apply();
+  });
+  function endDrag() { drag = null; svg.classList.remove('is-panning'); }
+  svg.addEventListener('pointerup', endDrag);
+  svg.addEventListener('pointercancel', endDrag);
 
   function show(e) {
+    if (drag) return;
     var box = map.getBoundingClientRect();
     tip.textContent = e.target.getAttribute('data-label');
     tip.hidden = false;

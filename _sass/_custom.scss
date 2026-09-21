@@ -330,7 +330,17 @@
    --------------------------------------------------------------------------
    Drawn from _data/visitors.json over the inline world map in
    _includes/world-map.svg, so nothing here depends on a third-party widget.
+   Palette follows the classic visitor-map look: blue ocean, white land,
+   coral pins.
    ========================================================================== */
+
+$vmap-ocean:        #41719c;
+$vmap-ocean-deep:   #3a6690;
+$vmap-land:         #ffffff;
+$vmap-graticule:    #a9c4dc;
+$vmap-pin:          #ef7361;
+$vmap-pin-edge:     #a8382c;
+$vmap-pin-past:     #e8b4ab;
 
 .visitor-map-container {
   margin-top: 1em;
@@ -343,46 +353,91 @@
 .vmap {
   position: relative;
   border-radius: $border-radius;
-  background: linear-gradient(170deg, #f7fafd 0%, #eef3fa 100%);
+  background: linear-gradient(180deg, $vmap-ocean 0%, $vmap-ocean-deep 100%);
 }
 
 .vmap__svg {
   display: block;
   width: 100%;
   height: auto;
+  cursor: grab;
+  // Clip the land to the card's rounded corners when zoomed in. Done here
+  // rather than with overflow:hidden on .vmap so the tooltip can still
+  // escape the top edge.
+  clip-path: inset(0 round #{$border-radius});
+
+  &.is-panning { cursor: grabbing; }
 }
 
-// Land is deliberately recessive so the pins carry the meaning.
 .vmap__land {
-  fill: #dfe6f0;
-  stroke: #f7fafd;
+  fill: $vmap-land;
+  stroke: $vmap-graticule;
   stroke-width: 0.5;
+  // Keep borders hairline-thin at every zoom level.
+  vector-effect: non-scaling-stroke;
 }
 
 .vmap__pin {
-  fill: $accent-color;
-  fill-opacity: 0.8;
-  // White ring keeps overlapping pins separable.
-  stroke: #fff;
-  stroke-width: 1.8;
-  cursor: default;
+  fill: $vmap-pin;
+  fill-opacity: 0.9;
+  // Darker ring keeps overlapping pins separable.
+  stroke: $vmap-pin-edge;
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
   transition: fill 0.15s ease, fill-opacity 0.15s ease;
 
   &:hover {
-    fill: $accent-color-dark;
+    fill: #ff5a44;
     fill-opacity: 1;
   }
 }
 
 // Places that were not in the most recent window.
 .vmap__pin--past {
-  fill: #93b4f0;
-  fill-opacity: 0.65;
+  fill: $vmap-pin-past;
+  fill-opacity: 0.75;
+}
+
+/* Zoom controls, bottom-left like the widget this replaces. */
+.vmap__zoom {
+  position: absolute;
+  left: 0.7em;
+  bottom: 0.7em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.vmap__zoom-btn {
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  color: #374151;
+  font-size: 1.05em;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+
+  & + & { border-top: 1px solid #d8dee6; }
+
+  &:hover { background: #eef2f7; }
+
+  &:disabled {
+    color: #b6bec9;
+    cursor: default;
+    background: #fff;
+  }
 }
 
 .vmap__tip {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   transform: translate(-50%, -125%);
   padding: 0.3em 0.6em;
   border-radius: 6px;
@@ -393,7 +448,7 @@
   line-height: 1.3;
   white-space: nowrap;
   pointer-events: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
   &[hidden] { display: none; }
 
@@ -473,6 +528,5 @@
   .visitor-map-container { padding: 0.7em 0.7em 0.6em; }
   .vmap__stat { flex-basis: 6em; padding: 0.5em 0.6em; }
   .vmap__stat-num { font-size: 1.25em; }
-  // The map is much smaller here, so a full-weight ring would swallow the dot.
-  .vmap__pin { stroke-width: 1; }
+  .vmap__zoom { left: 0.45em; bottom: 0.45em; }
 }

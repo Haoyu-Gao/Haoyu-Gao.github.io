@@ -81,7 +81,16 @@ async function fetchWindow() {
   if (start === -1 || end === -1) throw new Error(`unexpected feed body: ${body.slice(0, 120)}`);
   const rows = JSON.parse(body.slice(start, end + 1));
   if (!Array.isArray(rows)) throw new Error('feed payload was not an array');
-  return rows.filter((row) => row && row.lat != null && row.lon != null);
+  return rows.filter(
+    (row) =>
+      row &&
+      row.lat != null &&
+      row.lon != null &&
+      // Visitors the feed couldn't place come back as (0, 0) / cc "UN".
+      // A pin in the Gulf of Guinea would be worse than no pin.
+      !(Number(row.lat) === 0 && Number(row.lon) === 0) &&
+      row.cc !== 'UN',
+  );
 }
 
 function readExisting() {
