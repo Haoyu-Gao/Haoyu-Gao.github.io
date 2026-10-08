@@ -9,13 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_07.pdf">Download Full CV (PDF)</a></p>
+<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_10.pdf">Download Full CV (PDF)</a></p>
 
 ## Education
 
-* **Ph.D in Computer Science**, the University of Melbourne, Jan 2023 – Nov 2026 (Expected)
+* **Ph.D in Engineering and IT**, the University of Melbourne, Jan 2023 – Nov 2026 (Expected)
   * Supervisors: A/Prof. Christoph Treude and Dr. Mansooreh Zahedi
-  * Research Topic: Mitigating Knowledge Barriers in Traditional and AI-Based Software Development
+  * Research Topic: Understanding and Maintaining Documentation in Fast-Evolving Software Ecosystems
 * **M.S. in Information Technology**, the University of Melbourne, Feb 2021 – Dec 2022
   * WAM: 86.7/100
 * **B.S. in Mathematics and Applied Mathematics**, Fuzhou University, Sep 2016 – July 2020
@@ -24,7 +24,7 @@ redirect_from:
 ## Experience
 
 * **Visiting Postgraduate Research Student**, Singapore Management University, Sep 2025 – Feb 2026
-  * Visiting Professor: A/Prof. Christoph Treude
+  * Host Professor: A/Prof. Christoph Treude
 
 * **Teaching Assistant**, the University of Melbourne, Oct 2023 – Present
   * Tutored: COMP90041 Programming and Software Development; SWEN90017 Masters Advanced Software Project
@@ -45,6 +45,7 @@ redirect_from:
 ## Services and Activities
 
 **Journal Review**
+* Empirical Software Engineering Journal
 * Automated Software Engineering Journal
 
 **Conference Review**
@@ -70,7 +71,11 @@ redirect_from:
 
 ## Awards and Scholarships
 
-* **Dean's Honours List**, the University of Melbourne, July 2023
+* **FEIT PhD Writeup Award**, the University of Melbourne, Aug 2026
+  * Funded by the faculty and school with A$3,500.
+* **FEIT Conference Travel Grant**, the University of Melbourne, Feb 2026
+  * Funded by the faculty and school for conference travel with A$4,000.
+* **2022 Dean's Honours List**, the University of Melbourne, July 2023
   * Recognises outstanding academic performance, representing the top 5% of students in engineering or IT master programs.
 * **Melbourne Research Scholarship**, the University of Melbourne, Jan 2023
   * Rewarded to high-achieving students participating in research activities.

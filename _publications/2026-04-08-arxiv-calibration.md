@@ -3,7 +3,7 @@ title: "Fine-grained Approaches for Confidence Calibration of LLMs in Automated 
 collection: publications
 permalink: /publication/calibration
 date: 2026-04-08
-venue: 'arXiv preprint (under submission)'
+venue: 'arXiv preprint (Major Revision at IEEE TSE)'
 paperurl: 'https://arxiv.org/abs/2604.06723'
 citation: 'Hong Yi Lin, Chunhua Liu, Haoyu Gao, Patanamon Thongtanunam, and Christoph Treude. 2026. Fine-grained Approaches for Confidence Calibration of LLMs in Automated Code Revision. arXiv:2604.06723.'
 ---

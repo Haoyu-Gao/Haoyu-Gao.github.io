@@ -75,7 +75,7 @@ redirect_from:
       <span class="research-tag">ML for SE</span>
     </div>
     <div class="home-hero__cta">
-      <a class="btn-primary" href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_07.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+      <a class="btn-primary" href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_10.pdf"><i class="fas fa-file-pdf"></i> CV</a>
       <a class="btn-ghost" href="https://scholar.google.com/citations?user=vSm1V54AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Scholar</a>
       <a class="btn-ghost" href="https://github.com/Haoyu-Gao"><i class="fab fa-github"></i> GitHub</a>
       <a class="btn-ghost" href="mailto:haoyug1@student.unimelb.edu.au"><i class="fas fa-envelope"></i> Email</a>
@@ -179,8 +179,8 @@ redirect_from:
   <div class="pub-links"><a href="https://arxiv.org/pdf/2603.00489"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2603.00489"><i class="fas fa-archive"></i> arXiv</a></div>
 </div>
 
-<div class="pub-card pub-card--submission">
-  <span class="pub-venue pub-venue--submission">Under Submission</span>
+<div class="pub-card pub-card--revision">
+  <span class="pub-venue pub-venue--revision">TSE (Major Revision)</span>
   <div class="pub-title"><a href="https://arxiv.org/abs/2604.17940">When AI Models Become Dependencies: Studying the Evolution of Pre-Trained Model Reuse in Downstream Software Systems</a></div>
   <div class="pub-authors">P. Banyongrakkul, M. Zahedi, C. Treude, <strong>H. Gao</strong>, and P. Thongtanunam</div>
   <div class="pub-links"><a href="https://arxiv.org/pdf/2604.17940"><i class="fas fa-file-pdf"></i> PDF</a><a href="https://arxiv.org/abs/2604.17940"><i class="fas fa-archive"></i> arXiv</a></div>
@@ -219,7 +219,7 @@ redirect_from:
   <p>If you would like to collaborate, feel free to reach out by sending an email :)</p>
   <p><i class="fas fa-fw fa-envelope"></i> haoyug1@student.unimelb.edu.au</p>
   <p><i class="fas fa-fw fa-map-marker-alt"></i> 700 Swanston St, Carlton VIC 3053, Victoria, Australia</p>
-  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_07.pdf">Download CV (PDF)</a></p>
+  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_10.pdf">Download CV (PDF)</a></p>
 </div>
 </div>
 

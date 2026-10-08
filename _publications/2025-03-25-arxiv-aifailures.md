@@ -3,9 +3,9 @@ title: "AI Failures in the Eyes of the Downstream Developer: A First Look at Con
 collection: publications
 permalink: /publication/aifailures
 date: 2025-03-25
-venue: 'arXiv preprint (Major Revision at EMSE)'
+venue: 'Empirical Software Engineering (EMSE) 2026'
 paperurl: 'https://arxiv.org/abs/2503.19444'
-citation: 'Haoyu Gao, Mansooreh Zahedi, Wenxin Jiang, Hong Yi Lin, James C. Davis, and Christoph Treude. 2025. AI Failures in the Eyes of the Downstream Developer: A First Look at Concerns, Practices, and Challenges. arXiv:2503.19444.'
+citation: 'Haoyu Gao, Mansooreh Zahedi, Wenxin Jiang, Hong Yi Lin, James C. Davis, and Christoph Treude. 2026. AI Failures in the Eyes of the Downstream Developer: A First Look at Concerns, Practices, and Challenges. Empirical Software Engineering.'
 ---
 
 [Download PDF from arXiv](https://arxiv.org/pdf/2503.19444)
