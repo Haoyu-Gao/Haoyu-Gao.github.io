@@ -195,12 +195,6 @@ redirect_from:
 
 <div class="pub-card pub-card--submission">
   <span class="pub-venue pub-venue--submission">Under Submission</span>
-  <div class="pub-title">ChatGPT as an Installation Assistant: How Novices Use LLMs for Software Tool Installation</div>
-  <div class="pub-authors">L. Salerno, <strong>H. Gao</strong>, P. Thongtanunam, C. Treude</div>
-</div>
-
-<div class="pub-card pub-card--submission">
-  <span class="pub-venue pub-venue--submission">Under Submission</span>
   <div class="pub-title">Ethics by Configuration: AI Ethics Principles in Coding Agent Instructions</div>
   <div class="pub-authors"><strong>H. Gao</strong>, P. Banyongrakkul, M. Cheong, C. Treude, S. Baltes, and M. Zahedi</div>
 </div>

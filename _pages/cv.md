@@ -55,9 +55,6 @@ redirect_from:
 * PC member for ICSE'26 Artifact Evaluation Track
 * Junior PC member for MSR'25
 
-**Sub-reviewer**
-* TOSEM, ICSE'25, ESEM'24, APSEC'24
-
 **Student Volunteer**
 * ICSE 2023 — International Conference on Software Engineering
 
