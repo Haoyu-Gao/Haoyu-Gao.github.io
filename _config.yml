@@ -75,7 +75,7 @@ social:
 # Paste the value after "d=" from your mapmyvisitors widget code. When it is
 # set, the homepage shows that widget; when empty, it falls back to the
 # built-in map drawn from _data/visitors.json.
-mapmyvisitors            :
+mapmyvisitors            : "1PgBuuNJPS93NXAxfOkQb0KCMWw0MF1shcJESFm3Ov0"
 
 # Analytics
 analytics:
