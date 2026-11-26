@@ -75,7 +75,7 @@ redirect_from:
       <span class="research-tag">ML for SE</span>
     </div>
     <div class="home-hero__cta">
-      <a class="btn-primary" href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_10.pdf"><i class="fas fa-file-pdf"></i> CV</a>
+      <a class="btn-primary" href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_11.pdf"><i class="fas fa-file-pdf"></i> CV</a>
       <a class="btn-ghost" href="https://scholar.google.com/citations?user=vSm1V54AAAAJ&hl=en"><i class="fas fa-graduation-cap"></i> Scholar</a>
       <a class="btn-ghost" href="https://github.com/Haoyu-Gao"><i class="fab fa-github"></i> GitHub</a>
       <a class="btn-ghost" href="mailto:haoyug1@student.unimelb.edu.au"><i class="fas fa-envelope"></i> Email</a>
@@ -199,6 +199,24 @@ redirect_from:
   <div class="pub-authors">L. Salerno, <strong>H. Gao</strong>, P. Thongtanunam, C. Treude</div>
 </div>
 
+<div class="pub-card pub-card--submission">
+  <span class="pub-venue pub-venue--submission">Under Submission</span>
+  <div class="pub-title">Ethics by Configuration: AI Ethics Principles in Coding Agent Instructions</div>
+  <div class="pub-authors"><strong>H. Gao</strong>, P. Banyongrakkul, M. Cheong, C. Treude, S. Baltes, and M. Zahedi</div>
+</div>
+
+<div class="pub-card pub-card--submission">
+  <span class="pub-venue pub-venue--submission">Under Submission</span>
+  <div class="pub-title">(No) Separation of Concerns: Philosophical Concerns about Agent Ethics and Implications for SE Practitioners</div>
+  <div class="pub-authors">M. Cheong, S. Baltes, J. Byrne, <strong>H. Gao</strong>, R. Kula, S. Rosenstock, C. Treude, and M. Zahedi</div>
+</div>
+
+<div class="pub-card pub-card--submission">
+  <span class="pub-venue pub-venue--submission">Under Submission</span>
+  <div class="pub-title">Let the Agent Do It? How Software Practitioners Understand and Make Permission Decisions in Agentic AI Assistants</div>
+  <div class="pub-authors">L. Salerno, <strong>H. Gao</strong>, G. Gay, A. Serebrenik, and P. Leitner</div>
+</div>
+
 <h3 style="margin-top: 1.5em; margin-bottom: 0.8em; font-size: 1.1em; color: #374151;">Preprints</h3>
 
 <div class="pub-card pub-card--preprint">
@@ -219,7 +237,7 @@ redirect_from:
   <p>If you would like to collaborate, feel free to reach out by sending an email :)</p>
   <p><i class="fas fa-fw fa-envelope"></i> haoyug1@student.unimelb.edu.au</p>
   <p><i class="fas fa-fw fa-map-marker-alt"></i> 700 Swanston St, Carlton VIC 3053, Victoria, Australia</p>
-  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_10.pdf">Download CV (PDF)</a></p>
+  <p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_11.pdf">Download CV (PDF)</a></p>
 </div>
 </div>
 
@@ -227,6 +245,11 @@ redirect_from:
 <div class="section-block">
 <h2>Visitor Map</h2>
 
+{% if site.mapmyvisitors %}
+<div class="visitor-map-container visitor-map-container--mmv">
+  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&w=500&t=n&d={{ site.mapmyvisitors }}&cmo=f45744&cmn=f73b16"></script>
+</div>
+{% else %}
 <div class="visitor-map-container">
 {% assign visitors = site.data.visitors %}
 {% if visitors and visitors.locations.size > 0 %}
@@ -266,6 +289,7 @@ redirect_from:
   <p class="vmap__note">Visitor map data is being collected — check back shortly.</p>
 {% endif %}
 </div>
+{% endif %}
 </div>
 
 {% comment %}

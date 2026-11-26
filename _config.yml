@@ -71,6 +71,12 @@ social:
   links: # An array of links to social media profiles
 
 
+# Visitor map — mapmyvisitors.com, same widget as haoyetiancoder.github.io.
+# Paste the value after "d=" from your mapmyvisitors widget code. When it is
+# set, the homepage shows that widget; when empty, it falls back to the
+# built-in map drawn from _data/visitors.json.
+mapmyvisitors            :
+
 # Analytics
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"

@@ -9,11 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_10.pdf">Download Full CV (PDF)</a></p>
+<p><i class="fas fa-fw fa-file-pdf"></i> <a href="https://haoyu-gao.github.io/files/Haoyu_Gao_CV_2026_11.pdf">Download Full CV (PDF)</a></p>
 
 ## Education
 
-* **Ph.D in Engineering and IT**, the University of Melbourne, Jan 2023 – Nov 2026 (Expected)
+* **Ph.D in Engineering and IT**, the University of Melbourne, Jan 2023 – Dec 2026 (Expected)
   * Supervisors: A/Prof. Christoph Treude and Dr. Mansooreh Zahedi
   * Research Topic: Understanding and Maintaining Documentation in Fast-Evolving Software Ecosystems
 * **M.S. in Information Technology**, the University of Melbourne, Feb 2021 – Dec 2022
@@ -27,7 +27,7 @@ redirect_from:
   * Host Professor: A/Prof. Christoph Treude
 
 * **Teaching Assistant**, the University of Melbourne, Oct 2023 – Present
-  * Tutored: COMP90041 Programming and Software Development; SWEN90017 Masters Advanced Software Project
+  * Tutored: COMP90041 Programming and Software Development; SWEN90017/SWEN90018 Masters Advanced Software Project
   * Marked: COMP90041, SWEN90016 Software Processes and Management, COMP90049 Introduction to Machine Learning, COMP90051 Statistical Machine Learning
 
 * **Research Assistant**, the University of Melbourne, Dec 2023 – May 2024
@@ -46,9 +46,11 @@ redirect_from:
 
 **Journal Review**
 * Empirical Software Engineering Journal
+* Journal of Systems and Software
 * Automated Software Engineering Journal
 
 **Conference Review**
+* Reviewer for WWW'27
 * PC member for ICSME'26 Demo and Data Showcase Track
 * PC member for ICSE'26 Artifact Evaluation Track
 * Junior PC member for MSR'25
